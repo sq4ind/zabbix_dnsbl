@@ -1,3 +1,4 @@
+#list from http://www.dnsbl.info/dnsbl-list.php
 b.barracudacentral.org
 bl.deadbeef.com
 bl.emailbasura.org
