@@ -15,6 +15,8 @@ do
 	if host -W 1 -t a $rev_ip.$dnsbl >/dev/null 2>&1
 	then
 		echo $host blacklisted on $dnsbl
+	else
+		echo $host not blacklisted on $dnsbl
 	fi
 done
 
