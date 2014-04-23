@@ -1,5 +1,5 @@
 #!/bin/bash
-DNSLBL_LIST=dnsbl.txt
+DNSLBL_LIST=/usr/lib/zabbix/externalscripts/dnsbl.txt
 host=$1
 ip=`host $host | grep "has address" | head -n 1 | awk '{print $4}'`
 if [[ -z "$ip" ]]
