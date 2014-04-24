@@ -23,7 +23,7 @@ do
 	fi
 done
 echo $host dnsbl_status $listed
-} | zabbix_sender -z 127.0.0.1 -r -i -
+} | zabbix_sender -z 127.0.0.1 -r -i - > /dev/null 2>&1 &
 
 
 echo 1
