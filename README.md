@@ -31,3 +31,9 @@ Feedback
 Feel free to send bugs reports and feature request here:
 * https://github.com/sq4ind/zabbix_dnsbl/issues
 * mail: sq4ind[AT]gmail.com
+
+ToDo
+====
+- [ ] correct paths for used programs in script
+- [ ] add triggers in zabbix template
+- [ ] ...
