@@ -1,5 +1,5 @@
 #!/bin/bash
-zabbix_conf=`ps -aux | grep -E '(^|\s)zabbix_server($|\s)' | cut -d' ' -f 31`
+zabbix_conf=`ps aux | grep -E '(^|\s)zabbix_server($|\s)' | cut -d' ' -f 31`
 external_scripts=`grep ^[^\#] $zabbix_conf | grep ExternalScript | cut -d "=" -f 2`
 DNSLBL_LIST=$external_scripts/dnsbl.txt
 host=$1
