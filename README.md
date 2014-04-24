@@ -1,6 +1,7 @@
 zabbix_dnsbl
 ============
 External script and template for Zabbix to check if host is blacklisted.
+It was tested on Zabbix 2.2.3
 
 How it works
 ============
@@ -34,6 +35,6 @@ Feel free to send bugs reports and feature request here:
 
 ToDo
 ====
-- [ ] correct paths for used programs in script
-- [ ] add triggers in zabbix template
-- [ ] ...
+* correct paths for used programs in script
+* add triggers in zabbix template
+* ...
