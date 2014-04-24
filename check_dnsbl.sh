@@ -1,7 +1,11 @@
 #!/bin/bash
-DNSLBL_LIST=/usr/lib/zabbix/externalscripts/dnsbl.txt
+zabbix_conf=`ps -aux | grep -E '(^|\s)zabbix_server($|\s)' | cut -d' ' -f 31`
+external_scripts=`grep ^[^\#] $zabbix_conf | grep ExternalScript | cut -d "=" -f 2`
+DNSLBL_LIST=$external_scripts/dnsbl.txt
 host=$1
 ip=`host $host | grep "has address" | head -n 1 | awk '{print $4}'`
+
+
 if [[ -z "$ip" ]]
 then
 	echo "Could not get valid ip address for $host"
