@@ -21,7 +21,7 @@ for dnsbl in `cat $DNSLBL_LIST | grep -v "#"`
 do
 	if host -W 1 -t a $rev_ip.$dnsbl >/dev/null 2>&1
 	then
-		echo $host blacklisted on $dnsbl
+		echo $host dnsbl_blacklisted on $dnsbl
 		host -t txt $rev_ip.$dnsbl | sed "s/^/$host dnsbl_details /"
 		listed=`expr $listed + 1`
 	fi
