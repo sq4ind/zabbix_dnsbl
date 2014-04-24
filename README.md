@@ -34,6 +34,6 @@ Feel free to send bugs reports and feature request here:
 
 ToDo
 ====
-- [ ] correct paths for used programs in script
-- [ ] add triggers in zabbix template
-- [ ] ...
+-[ ] correct paths for used programs in script
+-[ ] add triggers in zabbix template
+-[ ] ...
