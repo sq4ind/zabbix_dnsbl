@@ -5,7 +5,7 @@ DNSLBL_LIST=$external_scripts/dnsbl.txt
 host=$1
 ip=`host $host | grep "has address" | head -n 1 | awk '{print $4}'`
 
-if [ ! -f $DNSLBL_LIST ]
+if [[ ! -f "$DNSLBL_LIST" ]]
 	echo "Could not get file with blacklists"
 	exit 1;
 fi
