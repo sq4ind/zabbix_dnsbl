@@ -7,7 +7,7 @@ ip=`host $host | grep "has address" | head -n 1 | awk '{print $4}'`
 
 if [[ ! -f "$DNSLBL_LIST" ]]
 then
-	echo "Could not get file with blacklists"
+	echo "Could not find $DNSLBL_LIST"
 	exit 1;
 fi
 		
